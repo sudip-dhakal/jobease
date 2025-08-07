@@ -8,12 +8,17 @@ import {
   FaBriefcase,
   FaUser,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const Navigation = useNavigate();
   return (
     <>
-      <div className="flex bg-zinc-700 p-4 justify-between">
-        <span className="w-[4rem] ml-10 rounded-full h-[4rem]">
+      <div className="flex text-white bg-zinc-700 p-4 justify-between">
+        <span
+          className="w-[4rem] ml-10 rounded-full h-[4rem] cursor-pointer"
+          onClick={() => Navigation("/")}
+        >
           <img
             src="/logo.png"
             className="w-full h-full rounded-full border-white border-solid border object-center object-cover"
@@ -21,18 +26,14 @@ const Navbar = () => {
           />
         </span>
         <ul className="flex justify-end gap-x-10 text-[1rem] pr-10  ">
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
+          <li
+            onClick={() => Navigation("/")}
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
+          >
             <FaHome className="hidden sm:visible" size={20} />
             Home
           </li>
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
-            <FaInfoCircle className="hidden sm:visible" size={20} />
-            About Us
-          </li>
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
-            <FaPhoneAlt className="hidden sm:visible" size={20} />
-            Contact Us
-          </li>
+
           <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
             <FaBuilding className="hidden sm:visible" size={20} />
             Companies
@@ -41,7 +42,17 @@ const Navbar = () => {
             <FaBriefcase className="hidden sm:visible" size={20} />
             Browse Jobs
           </li>
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300 bg-zinc-900 px-4 rounded-md">
+          <li
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
+            onClick={() => Navigation("/contact")}
+          >
+            <FaPhoneAlt className="hidden sm:visible" size={20} />
+            Contact Us
+          </li>
+          <li
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300 bg-zinc-900 px-4 rounded-md"
+            onClick={() => Navigation("/login")}
+          >
             <FaUser className="hidden sm:visible" size={20} />
             Login/Register
           </li>
