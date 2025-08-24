@@ -1,10 +1,10 @@
-import { useState } from "react";
 import "./App.css";
 import Landing from "./Components/Landing";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./Components/Contact";
 import Login from "./Authentication/Login";
 import Register from "./Authentication/Register";
+import Home from "./User/Home";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

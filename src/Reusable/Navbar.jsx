@@ -14,14 +14,14 @@ const Navbar = () => {
   const Navigation = useNavigate();
   return (
     <>
-      <div className="flex text-white bg-zinc-700 p-4 justify-between">
+      <div className="flex relative z-10 text-white bg-zinc-700 p-4 justify-between">
         <span
           className="w-[4rem] ml-10 rounded-full h-[4rem] cursor-pointer"
           onClick={() => Navigation("/")}
         >
           <img
             src="/logo.png"
-            className="w-full h-full rounded-full border-white border-solid border object-center object-cover"
+            className="w-full h-full rounded-full border-amber-500  border-solid border-2 object-center object-cover"
             alt=""
           />
         </span>
