@@ -21,7 +21,9 @@ const Home = () => {
         <JobCard />
         <JobCard />
         <JobCard />
-        
+        <JobCard />
+        <JobCard />
+        <JobCard />
 
      
       </div>
