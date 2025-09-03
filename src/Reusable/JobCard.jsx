@@ -5,7 +5,7 @@ const JobCard = () => {
   const [cardModal, setCardModal] = useState(false);
   return (
     <>
-      <div className="text-white border w-[30%] border-gray-700 rounded-xl p-6 bg-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <div className="text-white border w-[30%] border-gray-700 rounded-xl p-6 bg-gray-800 shadow-lg hover:shadow-2xl transition-shadow duration-300">
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center ">
           <div className="flex-shrink-0 flex items-center justify-center">
             <div className="w-10 h-10 rounded-full border-2 border-amber-500 overflow-hidden">

@@ -38,10 +38,10 @@ const Navbar = () => {
             <FaBuilding className="hidden sm:visible" size={20} />
             Companies
           </li>
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
+          {/* <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
             <FaBriefcase className="hidden sm:visible" size={20} />
             Browse Jobs
-          </li>
+          </li> */}
           <li
             className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
             onClick={() => Navigation("/contact")}
@@ -50,7 +50,7 @@ const Navbar = () => {
             Contact Us
           </li>
           <li
-            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300 bg-zinc-900 px-4 rounded-md"
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300 bg-red-700 px-4 rounded-md"
             onClick={() => Navigation("/login")}
           >
             <FaUser className="hidden sm:visible" size={20} />
