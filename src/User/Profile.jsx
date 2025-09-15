@@ -4,6 +4,7 @@ import Background from "../Reusable/Background";
 import { MdEdit } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import DropdownSkills from "./DropdownSkills";
+import AddExperience from "./AddExperience";
 
 const Profile = () => {
   const Navigate = useNavigate();
@@ -115,7 +116,6 @@ const Profile = () => {
                 >
                   Add Skills
                 </h3>
-                
               </div>
               <div className="flex flex-wrap gap-3 mt-4">
                 <span className="px-4 py-2 bg-gray-800 rounded-lg text-sm">
@@ -184,7 +184,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {addSkills && <DropdownSkills />}
+      {addSkills && <DropdownSkills setAddSkills={setAddSkills} />}
+      {addExperience && <AddExperience setAddExperience={setAddExperience} />}
     </>
   );
 };
