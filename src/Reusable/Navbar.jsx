@@ -8,6 +8,8 @@ import {
   FaBriefcase,
   FaUser,
 } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
+
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -34,14 +36,22 @@ const Navbar = () => {
             Home
           </li>
 
-          <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
+          <li
+            onClick={() => Navigation("/jobs")}
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
+          >
             <FaBuilding className="hidden sm:visible" size={20} />
-            Companies
+            Explore Jobs
           </li>
-          {/* <li className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300">
-            <FaBriefcase className="hidden sm:visible" size={20} />
-            Browse Jobs
-          </li> */}
+
+          <li
+            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
+            onClick={() => Navigation("/profile")}
+          >
+            <CgProfile className="hidden sm:visible" size={20} />
+            Profile
+          </li>
+
           <li
             className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
             onClick={() => Navigation("/contact")}
@@ -49,8 +59,9 @@ const Navbar = () => {
             <FaPhoneAlt className="hidden sm:visible" size={20} />
             Contact Us
           </li>
+
           <li
-            className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300 bg-red-700 px-4 rounded-md"
+            className="flex gap-x-3 items-center cursor-pointer duration-300 bg-red-700 px-4 rounded-md"
             onClick={() => Navigation("/login")}
           >
             <FaUser className="hidden sm:visible" size={20} />

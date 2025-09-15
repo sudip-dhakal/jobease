@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../Reusable/Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const Navigate = useNavigate();
   return (
     <div className="bg-[#242627] w-full min-h-screen text-white">
       <Navbar />
@@ -24,7 +26,10 @@ const Hero = () => {
             <p className="text-md md:text-xl mb-6">
               Discover thousands of opportunities tailored for your future.
             </p>
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded transition duration-300 cursor-pointer">
+            <button
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded transition duration-300 cursor-pointer"
+              onClick={() => Navigate("/login")}
+            >
               Get Started
             </button>
           </div>
