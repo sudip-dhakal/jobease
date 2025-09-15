@@ -6,7 +6,9 @@ import Login from "./Authentication/Login";
 import Register from "./Authentication/Register";
 import Home from "./User/Home";
 import Profile from "./User/Profile";
-
+import Rec_Home from "./Recruiter/Rec_Home";
+import Companies from "./Recruiter/Companies";
+import Applications from "./Recruiter/Applications";
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/jobs" element={<Home />} />
-          <Route path="profile" element={<Profile />} />
-      
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/recruiter_home" element={<Rec_Home />} />
+          <Route path="/companies" element={<Companies />} />
+          <Route path="/applications" element={<Applications />}/>
         </Routes>
       </BrowserRouter>
     </>
