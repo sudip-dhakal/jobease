@@ -44,13 +44,13 @@ const RecruiterNav = () => {
             Applications
           </li>
 
-          <li
+          {/* <li
             className="flex gap-x-3 items-center hover:text-red-700 cursor-pointer duration-300"
             onClick={() => Navigation("/profile")}
           >
             <CgProfile className="hidden sm:visible" size={20} />
             Profile
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
