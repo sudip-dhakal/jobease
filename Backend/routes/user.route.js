@@ -20,7 +20,7 @@ router
 router.route("/logout").get(logout);
 
 router.get("/", (req, res) => {
-  res.json({ message: "User API is working" });
+  res.json({ message: "Api is working" });
 });
 
 module.exports = router;
