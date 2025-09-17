@@ -19,7 +19,7 @@ const Hero = () => {
 
         <div className="absolute inset-0 flex items-center justify-end px-6 md:px-12">
           <div className="text-right max-w-xl">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-[linear-gradient(to_right,white,#facc15)] break-words">
+            <h1 className="text-3xl md:text-5xl overflow-hidden font-bold mb-4 text-transparent bg-clip-text bg-[linear-gradient(to_right,white,#facc15)] break-words">
               Find Your Dream Tech Job
             </h1>
 
